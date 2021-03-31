@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--String login -->
+    <string name="app_name">AppClientes</string>
+    <string name="EmailLogin">Set ur email.</string>
+    <string name="passwordLogin">Set ur password.</string>
+    <string name="Entrar">Log In</string>
+    <string name="OlvidoContra">¿Forgot Password?</string>
+    <!--String menu funcionalidades-->
+    <string name="Perfil">Profile</string>
+    <string name="PartesHoras">Cambiar este string</string>
+    <string name="Fichajes">Cambiar este string</string>
+    <string name="Proyectos">Proyects</string>
+    <string name="Logout">Log out</string>
+    <!--Olvido contra-->
+    <string name="EmailOlvidoContra">Set ur email.</string>
+    <string name="contra1">Set ur new password.</string>
+    <string name="contra2">Set again ur new password.</string>
+    <string name="buttonCambiarContra">Edit password</string>
+    <string name="CambioDeContrasena">Password is changed sucesfully</string>
+    <string name="dastosVaciosLogin">The data is empty, check to fill in all.</string>
+    <string name="pass9caracteres">The password must be at least 9 characters long.</string>
+    <string name="inicioSesionCorrecto">Succesfull login.</string>
+    <string name="contrasenas_iguales">The passwords must be the same.</string>
+    <!--String perfil-->
+    <string name="nombre_perfil">User profile name:</string>
+    <string name="email_perfil">User profile email:</string>
+    <string name="puesto_perfil">Job positions:</string>
+    <string name="apellidos_pefil">Surname:</string>
+    <!--String Partes horas-->
+    <string name="InsertarParteHoras">Insert timesheet</string>
+    <string name="mostrarPartesHoras">Show timesheet</string>
+    <string name="buscador">Search ur timesheet...</string>
+    <string name="dastosVacios">The data is empty</string>
+    <string name="proyectos">The user projects:</string>
+    <!--Proyectos-->
+
+    <!--Fichajes-->
+
+    <!--Compras-->
+
+    <!--Ventas-->
+    <!--Showpopup-->
+    <string name="insertarFechaInicio">Start Date</string>
+    <string name="insertarFechaFinal">End Date</string>
+    <string name="insertarHoraInicial">Start hour</string>
+    <string name="insertarHoraFinal">End hour</string>
+    <string name="Seleccionar_proyectos">Proyect Select</string>
+    <string name="btnSubirParte">Upload timesheet</string>
+
+</resources>

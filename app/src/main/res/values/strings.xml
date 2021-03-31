@@ -1,0 +1,50 @@
+<resources>
+    <!--String login -->
+    <string name="app_name">AppClientes</string>
+    <string name="EmailLogin">Introduzca su email.</string>
+    <string name="passwordLogin">Introduzca su contraseña.</string>
+    <string name="Entrar">Entrar</string>
+    <string name="OlvidoContra">¿Olvido su contraseña?</string>
+    <!--String menu funcionalidades-->
+    <string name="Perfil">Perfil</string>
+    <string name="PartesHoras">Partes horas</string>
+    <string name="Fichajes">Fichajes</string>
+    <string name="Proyectos">Proyectos</string>
+    <string name="Logout">Salir</string>
+    <!--Olvido contra-->
+    <string name="EmailOlvidoContra">Introduzca su email.</string>
+    <string name="contra1">Introduzca la nueva contraseña.</string>
+    <string name="contra2">Introduzca de nuevo la contraseña.</string>
+    <string name="buttonCambiarContra">Cambiar contraseña</string>
+    <string name="CambioDeContrasena">Cambio de contraseña exitoso</string>
+    <string name="dastosVaciosLogin">Los datos estan vacios, comprueba que rellenaste todos.</string>
+    <string name="pass9caracteres">La contraseña debe tener al menos 9 caracteres.</string>
+    <string name="inicioSesionCorrecto">Inicio de sesion correcto.</string>
+    <string name="contrasenas_iguales">Las contraseñas deben ser iguales.</string>
+    <!--String perfil-->
+    <string name="nombre_perfil">Nombre de perfil de usuario:</string>
+    <string name="email_perfil">Email de perfil del usuario:</string>
+    <string name="puesto_perfil">Puesto del usuario:</string>
+    <string name="apellidos_pefil">Surname:</string>
+    <!--String Partes horas-->
+    <string name="InsertarParteHoras">Insertar parte</string>
+    <string name="buscador">Busca tu parte de horas...</string>
+    <string name="dastosVacios">Los datos estan vacios</string>
+    <string name="mostrarPartesHoras">Mostrar partes</string>
+    <!--Proyectos-->
+    <string name="proyectos">Los proyectos del usuario:</string>
+    <!--Fichajes-->
+
+    <!--Compras-->
+
+    <!--Ventas-->
+
+    <!--Showpopup-->
+    <string name="insertarFechaInicio">Fecha inicio</string>
+    <string name="insertarFechaFinal">Fecha final</string>
+    <string name="insertarHoraInicial">Hora inicio</string>
+    <string name="insertarHoraFinal">Hora final</string>
+    <string name="Seleccionar_proyectos">Seleccionar proyectos</string>
+    <string name="btnSubirParte">Subir parte</string>
+
+</resources>
