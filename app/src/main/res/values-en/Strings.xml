@@ -24,9 +24,16 @@
     <string name="contrasenas_iguales">The passwords must be the same.</string>
     <!--String perfil-->
     <string name="nombre_perfil">User profile name:</string>
-    <string name="email_perfil">User profile email:</string>
+    <string name="perfil_telefono">User profile number:</string>
     <string name="puesto_perfil">Job positions:</string>
-    <string name="apellidos_pefil">Surname:</string>
+    <string name="empresa_perfil">Bussines:</string>
+    <string name="email_perfil">Profile email:</string>
+    <!--PopupPerfil-->
+    <string name="Nombre">Change name</string>
+    <string name="correoPerfil">Change email</string>
+    <string name="telefonoPerfil">Change telephone number </string>
+    <string name="puestoPerfil">Cambiar job</string>
+    <string name="btnCambiarUsuario">Cambiar datos</string>
     <!--String Partes horas-->
     <string name="InsertarParteHoras">Insert timesheet</string>
     <string name="mostrarPartesHoras">Show timesheet</string>
@@ -48,4 +55,22 @@
     <string name="Seleccionar_proyectos">Proyect Select</string>
     <string name="btnSubirParte">Upload timesheet</string>
 
+    <!--Administrador -->
+    <string name="insertarUsuarioAdministrador">Insert new user</string>
+    <string name="borrarUsuarioAdministrador">Delete user</string>
+    <string name="insertarParteHorasAdministrador">Insert timesheet:</string>
+    <string name="borrarParteHorasAdministrador">Delete timesheet:</string>
+    <string name="borrarFichajesAdmonostrador">Delete signin:</string>
+    <string name="borrarProyectosAdministrador">Delete project:</string>
+    <string name="mostratProyectosAdministrador">Show projects:</string>
+    <!--Pop Up Administrador -->
+    <string name="insertarNombreAdministrador">Insert user name.</string>
+    <string name="insertarcontrasenaAdministrador">Insert password name.</string>
+    <string name="btnInsertarUsuarioadmimnistrador">Insert new user.</string>
+    <string name="btnInsertarParteHorasAdmimnistrador">Insert timesheet</string>
+    <string name="btnborraParteHorasAdmimnistrador">Delete timesheet</string>
+    <string name="btnborraFichajesAdmimnistrador">Delete signin</string>
+    <string name="btnBorrarPoyectoAdmimnistrador">Delete project</string>
+    <string name="btnMostarPoyectoAdmimnistrador">Mostar proyecto</string>
+    <string name="btnborrarUsuarioAdministrador">Delete user</string>
 </resources>

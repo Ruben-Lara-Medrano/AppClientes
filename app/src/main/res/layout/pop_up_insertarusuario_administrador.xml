@@ -20,6 +20,12 @@
         android:textStyle="bold" />
 
     <LinearLayout
+        android:id="@+id/llayoutVacio"
+        android:layout_width="match_parent"
+        android:layout_height="111dp"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
         android:layout_width="334dp"
         android:layout_height="111dp"
         android:layout_marginTop="15dp"
@@ -33,61 +39,17 @@
             android:clickable="true"
             android:ems="10"
             android:focusable="false"
-            android:hint="Nombre Usuario"
+            android:hint="@string/insertarNombreAdministrador"
             android:inputType="date" />
 
         <EditText
-            android:id="@+id/contrasena"
+            android:id="@+id/contrasenaPopUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="@string/insertarFechaFinal"
-            android:inputType="phone" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="334dp"
-        android:layout_height="111dp"
-        android:layout_marginTop="15dp"
-        android:orientation="horizontal">
-
-        <EditText
-            android:id="@+id/Telefono"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:clickable="true"
-            android:ems="10"
-            android:focusable="false"
-            android:hint="Correo Usuario"
-            android:inputType="date" />
-
-        <EditText
-            android:id="@+id/Correoperfil"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="Puesto"
-            android:inputType="phone" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="333dp"
-        android:layout_height="72dp"
-        android:orientation="horizontal">
-
-        <EditText
-            android:id="@+id/SeleccionarEmpresa"
-            android:layout_width="323dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="Seleccionar empresa"
-            android:inputType="textPersonName" />
+            android:hint="@string/insertarcontrasenaAdministrador"
+            android:inputType="textPassword" />
 
     </LinearLayout>
 
@@ -98,7 +60,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="25dp"
         android:background="@drawable/estilo_boton_popup"
-        android:text="Crear usuario"
+        android:text="@string/btnInsertarUsuarioadmimnistrador"
         android:textColor="@color/white" />
 
 </LinearLayout>

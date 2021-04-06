@@ -7,46 +7,47 @@
     tools:context=".Adminstrador">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="411dp"
+        android:layout_height="730dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        >
+        app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="64dp"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/InsertarUsuario"
-                android:layout_width="82dp"
+                android:layout_width="116dp"
                 android:layout_height="34dp"
                 android:layout_weight="1"
-                android:text="InsertarUsuario" />
+                android:text="@string/insertarUsuarioAdministrador" />
 
             <Button
                 android:id="@+id/btnInsertarUsuario"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Insertar Usuario" />
+                android:text="@string/btnInsertarUsuarioadmimnistrador" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="47dp"
+            android:layout_height="64dp"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/BorrarUsuario"
-                android:layout_width="wrap_content"
+                android:layout_width="103dp"
                 android:layout_height="32dp"
                 android:layout_weight="1"
-                android:text="BorrarUsuario" />
+                android:text="@string/borrarUsuarioAdministrador" />
 
             <Button
                 android:id="@+id/btnBorrarUsuario"
@@ -54,6 +55,106 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Borrar usuario" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/InsertarParteHorasTextView"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/insertarParteHorasAdministrador" />
+
+            <Button
+                android:id="@+id/InsertarParteHoras"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btnInsertarParteHorasAdmimnistrador" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/Borrar_parte_horas"
+                android:layout_width="144dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/borrarParteHorasAdministrador" />
+
+            <Button
+                android:id="@+id/BorrarParteHoras"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btnborraParteHorasAdmimnistrador" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="112dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/borrarFichajesAdmonostrador" />
+
+            <Button
+                android:id="@+id/btnBorrarFichajes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btnborraFichajesAdmimnistrador" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="129dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/borrarProyectosAdministrador" />
+
+            <Button
+                android:id="@+id/btnBorrarProyectos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btnBorrarPoyectoAdmimnistrador" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/mostratProyectosAdministrador" />
+
+            <Button
+                android:id="@+id/btnMostarProyectos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btnMostarPoyectoAdmimnistrador" />
         </LinearLayout>
     </LinearLayout>
 

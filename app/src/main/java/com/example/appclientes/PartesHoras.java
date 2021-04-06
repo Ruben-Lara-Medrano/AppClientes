@@ -39,13 +39,13 @@ public class PartesHoras extends AppCompatActivity {
 
         dialogBuilder= new AlertDialog.Builder(this);
         final View contactPopupView = getLayoutInflater().inflate(R.layout.popup, null);
-        EditText editarNombre = contactPopupView.findViewById(R.id.NombreUsuario);
-        EditText editartelefono = contactPopupView.findViewById(R.id.ApellidosUsuario);
+        EditText editarNombre = contactPopupView.findViewById(R.id.NombrePerfil);
+        EditText editartelefono = contactPopupView.findViewById(R.id.contrasena);
         EditText editarpuesto = contactPopupView.findViewById(R.id.SeleccionarEmpresa);
-        EditText HoraInicio = contactPopupView.findViewById(R.id.Correo);
-        EditText horaFinal = contactPopupView.findViewById(R.id.Puesto);
+        EditText HoraInicio = contactPopupView.findViewById(R.id.Telefono);
+        EditText horaFinal = contactPopupView.findViewById(R.id.Correoperfil);
 
-        Button btnEnviar = contactPopupView.findViewById(R.id.btnCrearUsuario);
+        Button btnEnviar = contactPopupView.findViewById(R.id.btnCambiarUsuario);
         TextView txtclose = contactPopupView.findViewById(R.id.txtclose);
 
         txtclose.setText("X");

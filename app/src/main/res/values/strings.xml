@@ -23,9 +23,16 @@
     <string name="contrasenas_iguales">Las contraseñas deben ser iguales.</string>
     <!--String perfil-->
     <string name="nombre_perfil">Nombre de perfil de usuario:</string>
-    <string name="email_perfil">Email de perfil del usuario:</string>
+    <string name="perfil_telefono">Telefono de perfil del usuario:</string>
     <string name="puesto_perfil">Puesto del usuario:</string>
-    <string name="apellidos_pefil">Surname:</string>
+    <string name="empresa_perfil">Empresa:</string>
+    <string name="email_perfil">Correo perfil:</string>
+    <!--PopupPerfil-->
+    <string name="Nombre">Cambiar nombre</string>
+    <string name="correoPerfil">Cambiar correo</string>
+    <string name="telefonoPerfil">Cambiar telefono</string>
+    <string name="puestoPerfil">Cambiar puesto</string>
+    <string name="btnCambiarUsuario">Cambiar puesto</string>
     <!--String Partes horas-->
     <string name="InsertarParteHoras">Insertar parte</string>
     <string name="buscador">Busca tu parte de horas...</string>
@@ -46,5 +53,27 @@
     <string name="insertarHoraFinal">Hora final</string>
     <string name="Seleccionar_proyectos">Seleccionar proyectos</string>
     <string name="btnSubirParte">Subir parte</string>
+
+    <!--Administrador -->
+    <string name="insertarUsuarioAdministrador">Insertar usuario:</string>
+    <string name="borrarUsuarioAdministrador">Borrar usuario:</string>
+    <string name="insertarParteHorasAdministrador">Insertar parte horas:</string>
+    <string name="borrarFichajesAdmonostrador">Borrar fichaje:</string>
+    <string name="borrarParteHorasAdministrador">Borrar parte horas:</string>
+    <string name="borrarProyectosAdministrador">Borrar proyecto:</string>
+    <string name="mostratProyectosAdministrador">Mostrar proyectos:</string>
+
+    <!--Pop Up Administrador -->
+    <string name="insertarNombreAdministrador">Insertar nombre</string>
+    <string name="insertarcontrasenaAdministrador">Insertar contrasena</string>
+    <string name="btnInsertarUsuarioadmimnistrador">Insertar usuario</string>
+    <string name="btnInsertarParteHorasAdmimnistrador">Insertar parte horas</string>
+    <string name="btnborraParteHorasAdmimnistrador">Borrar parte horas</string>
+    <string name="btnborraFichajesAdmimnistrador">Borrar fichaje</string>
+    <string name="btnBorrarPoyectoAdmimnistrador">Borrar proyecto</string>
+    <string name="btnMostarPoyectoAdmimnistrador">Mostar proyecto</string>
+    <string name="btnborrarUsuarioAdministrador">Borrar usuario</string>
+
+
 
 </resources>

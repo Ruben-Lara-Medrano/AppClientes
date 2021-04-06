@@ -18,7 +18,7 @@ public class MainMenu extends AppCompatActivity {
         Fichajes = findViewById(R.id.Fichajes);
         Proyectos = findViewById(R.id.Proyectos);
         //Compras = findViewById(R.id.);
-        Perfil = findViewById(R.id.Perrfil);
+        Perfil = findViewById(R.id.Perfil);
         Salir = findViewById(R.id.Salir);
 
         Proyectos.setOnClickListener(new View.OnClickListener() {

@@ -1,38 +1,105 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Perfil">
 
     <LinearLayout
-        android:layout_width="412dp"
-        android:layout_height="733dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        android:gravity="center_horizontal"
+        android:background="@drawable/perfil_parte_arriba">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iVFotoPerfil"
+            android:layout_width="175dp"
+            android:layout_height="128dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_baseline_person_24" />
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Cambie su foto de perfil" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/btnVolver"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="-25dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/boton_central"
+        android:clickable="false">
+
+        <Button
+            android:id="@+id/volver"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/ic_baseline_arrow_back_24"
+            android:padding="6dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Volver al menu principal" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="186dp"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="14dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:contentDescription="imagen1"
+                android:src=""
+                app:srcCompat="@drawable/ic_baseline_work_24" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-                <ImageView
-                    android:id="@+id/imagenPerfil"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/ic_baseline_person_24" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="@string/puesto_perfil" />
+
+
+                <TextView
+                    android:id="@+id/nombreUsuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Peon" />
 
             </LinearLayout>
 
@@ -40,42 +107,128 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="14dp">
+
+            <ImageButton
+                android:id="@+id/btnLlamar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/white"
+                android:contentDescription="imagen2"
+                android:padding="4dp"
+                android:src="@drawable/ic_icono_telefono_24" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:orientation="horizontal">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-                <ImageView
-                    android:id="@+id/imageView6"
-                    android:layout_width="146dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/ic_baseline_work_24" />
-
-                <LinearLayout
+                <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="@string/perfil_telefono" />
 
-                    <TextView
-                        android:id="@+id/textView10"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="TextView" />
-
-                    <TextView
-                        android:id="@+id/textView11"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="TextView" />
-                </LinearLayout>
+                <TextView
+                    android:id="@+id/PerfilTelefono"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="689389951" />
 
             </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="14dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:contentDescription="imagen3"
+                android:padding="4dp"
+                app:srcCompat="@drawable/ic_icono_empresa_24" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="@string/empresa_perfil" />
+
+                <TextView
+                    android:id="@+id/PerfilCorreo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="HOMSA" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="14dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:contentDescription="imagen4"
+                android:padding="4dp"
+                app:srcCompat="@drawable/ic_baseline_person_24" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="@string/email_perfil" />
+
+                <TextView
+                    android:id="@+id/puesto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="prueba@prueba.com" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="14dp">
+
+            <Button
+                android:id="@+id/editarCaracteristicas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/botones_de_perfil"
+                android:text="Cambiar datos del perfil" />
         </LinearLayout>
 
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
