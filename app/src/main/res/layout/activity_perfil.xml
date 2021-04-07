@@ -22,11 +22,12 @@
             android:src="@drawable/ic_baseline_person_24" />
 
         <TextView
-            android:id="@+id/text_view"
+            android:id="@+id/CambiarFoto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="Cambie su foto de perfil" />
+
     </LinearLayout>
 
     <FrameLayout
@@ -80,7 +81,6 @@
                 android:layout_marginEnd="10dp"
                 android:layout_marginRight="10dp"
                 android:contentDescription="imagen1"
-                android:src=""
                 app:srcCompat="@drawable/ic_baseline_work_24" />
 
             <LinearLayout

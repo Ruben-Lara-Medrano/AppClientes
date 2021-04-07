@@ -9,10 +9,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
 public class PartesHoras extends AppCompatActivity {
-    private Button buscar, insertar;
+    private FloatingActionButton buscar, insertar;
     private EditText fechainico;
     AlertDialog.Builder dialogBuilder;
     AlertDialog dialog;
@@ -21,22 +22,19 @@ public class PartesHoras extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_partes_horas);
-        insertar = findViewById(R.id.InsertarParte);
+        insertar = findViewById(R.id.InsertarParteHora);
+
+
+
         insertar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ShowPopup(v);
             }
         });
-       /** fechainico.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showDatePickerDialog();
-            }
-        });*/
     }
-    public void ShowPopup(View v) {
 
+    public void ShowPopup(View v) {
         dialogBuilder= new AlertDialog.Builder(this);
         final View contactPopupView = getLayoutInflater().inflate(R.layout.popup, null);
         EditText editarNombre = contactPopupView.findViewById(R.id.NombrePerfil);
@@ -79,4 +77,5 @@ public class PartesHoras extends AppCompatActivity {
     public void showDatePickerDialog(){
         //todo Crear el metodo para el datepicker
     }
+
 }

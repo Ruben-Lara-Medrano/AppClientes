@@ -1,84 +1,60 @@
 package com.example.appclientes.Pojos;
 
 public class Compañia {
-    private String NombreEmpresa;
-    private String ID;
-    private String correo;
-    private String empleados;
-    private String proyectos;
-    private int numeroEmpleados;
-    private String Imagen;
+    private String NombreCompañia;
+    private int numeroEmplados;
+    private String email;
+    private String Telefono;
+    private String UID;
 
     public Compañia() {
-
     }
 
-    public String getNombreEmpresa() {
-        return NombreEmpresa;
+    public Compañia(String nombreCompañia, int numeroEmplados, String email, String telefono, String UID) {
+        NombreCompañia = nombreCompañia;
+        this.numeroEmplados = numeroEmplados;
+        this.email = email;
+        Telefono = telefono;
+        this.UID = UID;
     }
 
-    public void setNombreEmpresa(String nombreEmpresa) {
-        NombreEmpresa = nombreEmpresa;
+    public String getNombreCompañia() {
+        return NombreCompañia;
     }
 
-    public String getID() {
-        return ID;
+    public void setNombreCompañia(String nombreCompañia) {
+        NombreCompañia = nombreCompañia;
     }
 
-    public void setID(String ID) {
-        this.ID = ID;
+    public int getNumeroEmplados() {
+        return numeroEmplados;
     }
 
-    public String getCorreo() {
-        return correo;
+    public void setNumeroEmplados(int numeroEmplados) {
+        this.numeroEmplados = numeroEmplados;
     }
 
-    public void setCorreo(String correo) {
-        this.correo = correo;
+    public String getEmail() {
+        return email;
     }
 
-    public String getEmpleados() {
-        return empleados;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public void setEmpleados(String empleados) {
-        this.empleados = empleados;
+    public String getTelefono() {
+        return Telefono;
     }
 
-    public String getProyectos() {
-        return proyectos;
+    public void setTelefono(String telefono) {
+        Telefono = telefono;
     }
 
-    public void setProyectos(String proyectos) {
-        this.proyectos = proyectos;
+    public String getUID() {
+        return UID;
     }
 
-    public int getNumeroEmpleados() {
-        return numeroEmpleados;
-    }
-
-    public void setNumeroEmpleados(int numeroEmpleados) {
-        this.numeroEmpleados = numeroEmpleados;
-    }
-
-    public String getImagen() {
-        return Imagen;
-    }
-
-    public void setImagen(String imagen) {
-        Imagen = imagen;
-    }
-
-    @Override
-    public String toString() {
-        return "Compañia{" +
-                "NombreEmpresa='" + NombreEmpresa + '\'' +
-                ", ID='" + ID + '\'' +
-                ", correo='" + correo + '\'' +
-                ", empleados='" + empleados + '\'' +
-                ", proyectos='" + proyectos + '\'' +
-                ", numeroEmpleados=" + numeroEmpleados +
-                ", Imagen='" + Imagen + '\'' +
-                '}';
+    public void setUID(String UID) {
+        this.UID = UID;
     }
 }

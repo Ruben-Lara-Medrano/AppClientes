@@ -50,11 +50,20 @@ public class Login extends AppCompatActivity {
             snackbar.setDuration(2000);
             snackbar.show();
         }else {
-            Intent i = new Intent(getApplicationContext(), MainMenu.class);
-            startActivity(i);
-            Snackbar snackbar = Snackbar.make(view, R.string.inicioSesionCorrecto, Snackbar.LENGTH_LONG);
-            snackbar.setDuration(2000);
-            snackbar.show();
+            if(correo.getText().toString().equals("1234") && pass.getText().toString().equals("1234")){
+                Intent i = new Intent(getApplicationContext(), Adminstrador.class);
+                startActivity(i);
+                Snackbar snackbar = Snackbar.make(view, R.string.inicioSesionCorrecto, Snackbar.LENGTH_LONG);
+                snackbar.setDuration(2000);
+                snackbar.show();
+            }
+            else {
+                Intent i = new Intent(getApplicationContext(), MainMenu.class);
+                startActivity(i);
+                Snackbar snackbar = Snackbar.make(view, R.string.inicioSesionCorrecto, Snackbar.LENGTH_LONG);
+                snackbar.setDuration(2000);
+                snackbar.show();
+            }
         }
     }
 

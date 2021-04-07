@@ -15,6 +15,7 @@ import com.google.android.material.snackbar.Snackbar;
 
 public class Perfil extends AppCompatActivity {
     private Button cambiarDatos,cambiarLocalizacionMaps, volver;
+    private TextView cambiarFoto;
     AlertDialog.Builder dialogBuilder;
     AlertDialog dialog;
     private PendingIntent pendingIntent;
@@ -26,6 +27,7 @@ public class Perfil extends AppCompatActivity {
         setContentView(R.layout.activity_perfil);
         volver= findViewById(R.id.volver);
         cambiarDatos = findViewById(R.id.editarCaracteristicas);
+        cambiarFoto = findViewById(R.id.CambiarFoto);
         volver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,8 +41,17 @@ public class Perfil extends AppCompatActivity {
                 ShowPopUp(v);
             }
         });
+        cambiarFoto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cambiarImagen();
+            }
+        });
     }
-
+    public void cambiarImagen(){
+        Intent i = new Intent();
+        startActivity(i);
+    }
     public void ShowPopUp(View v){
         dialogBuilder= new AlertDialog.Builder(this);
         final View contactPopupView = getLayoutInflater().inflate(R.layout.popup_modificar_usuario, null);
@@ -78,5 +89,4 @@ public class Perfil extends AppCompatActivity {
             }
         });
     }
-
 }

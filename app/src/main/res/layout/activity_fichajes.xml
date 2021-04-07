@@ -49,13 +49,13 @@
             android:id="@+id/BotonMostarfFichas"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="MostrarFichas" />
+            android:text="Mostrar Fichas" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/mostarFichajes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="Mostrar Fichajes" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
