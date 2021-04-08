@@ -26,23 +26,23 @@
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/Proyecto"
+            android:id="@+id/NombreVenta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:clickable="true"
             android:ems="10"
             android:focusable="false"
-            android:hint="@string/insertarFechaInicio"
+            android:hint="Nombre Ventas"
             android:inputType="date" />
 
         <EditText
-            android:id="@+id/Estado"
+            android:id="@+id/Cliente"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="@string/insertarFechaFinal"
+            android:hint="Seleccionar Clientes"
             android:inputType="phone" />
 
     </LinearLayout>
@@ -61,7 +61,7 @@
             android:clickable="true"
             android:ems="10"
             android:focusable="false"
-            android:hint="@string/insertarHoraInicial"
+            android:hint="Plantilla presupuesto"
             android:inputType="date" />
 
         <EditText
@@ -70,25 +70,26 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="@string/insertarHoraFinal"
+            android:hint="Validez"
             android:inputType="phone" />
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="333dp"
-        android:layout_height="72dp"
-        android:orientation="horizontal">
+        android:layout_width="338dp"
+        android:layout_height="78dp"
+        android:orientation="vertical">
 
         <EditText
-            android:id="@+id/SeleccionarEmpresa"
-            android:layout_width="323dp"
+            android:id="@+id/PlazoDePago"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:clickable="true"
             android:ems="10"
-            android:hint="@string/Seleccionar_proyectos"
-            android:inputType="textPersonName" />
-
+            android:focusable="false"
+            android:hint="Plazo de pago"
+            android:inputType="date" />
     </LinearLayout>
 
     <Button
@@ -98,7 +99,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="25dp"
         android:background="@drawable/estilo_boton_popup"
-        android:text="@string/btnSubirParte"
+        android:text="Subir venta"
         android:textColor="@color/white" />
 
 </LinearLayout>

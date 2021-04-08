@@ -41,11 +41,14 @@
     <!--Proyectos-->
     <string name="proyectos">Los proyectos del usuario:</string>
     <!--Fichajes-->
-
+    <string name="MostarFichajes">Mostrar ultimos fichajes</string>
+    <string name="pulsameParaFichar">Pulsame para fichar</string>
     <!--Compras-->
 
     <!--Ventas-->
 
+    <!--Tareas -->
+    <string name="buscadorTareas">Buscar tareas...</string>
     <!--Showpopup-->
     <string name="insertarFechaInicio">Fecha inicio</string>
     <string name="insertarFechaFinal">Fecha final</string>
@@ -73,6 +76,20 @@
     <string name="btnBorrarPoyectoAdmimnistrador">Borrar proyecto</string>
     <string name="btnMostarPoyectoAdmimnistrador">Mostar proyecto</string>
     <string name="btnborrarUsuarioAdministrador">Borrar usuario</string>
-
+    <string name="empleado">Insertar empleado</string>
+    <string name="horas">Insertar horas</string>
+    <string name="seleccionarProyecto">Seleccionar proyecto</string>
+    <string name="seleccionarTarea">Seleccionar tarea</string>
+    <string name="diaInicio">Seleccione un dia de inicio</string>
+    <string name="diaFinal">Seleccione un dia de finalizacion</string>
+    <string name="descripcion">Escriba una descripcion...</string>
+    <string name="nombreProyecto">Nombre del proyecto</string>
+    <string name="estadoProyecto">Estado del proyecto</string>
+    <string name="btnMeterProyecto">Meter proyecto</string>
+    <string name="nombreNuevoUsuarioAdministrador">Nombre usuario</string>
+    <string name="correoNuevoUsuarioAdministrador">Correo del usuario</string>
+    <string name="puestoNuevousuarioAdministrador">Puesto del usuario</string>
+    <string name="seleccionarEmpresaNuevoUsuario">Seleccionar empresa del usuario</string>
+    <string name="btnCrearUsuarioAdministrador">Crear usuario administrador</string>
 
 </resources>

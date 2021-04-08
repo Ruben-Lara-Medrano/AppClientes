@@ -20,8 +20,13 @@
         android:textStyle="bold" />
 
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
         android:layout_width="334dp"
-        android:layout_height="111dp"
+        android:layout_height="123dp"
         android:layout_marginTop="15dp"
         android:orientation="horizontal">
 
@@ -33,7 +38,7 @@
             android:clickable="true"
             android:ems="10"
             android:focusable="false"
-            android:hint="@string/insertarFechaInicio"
+            android:hint="@string/nombreProyecto"
             android:inputType="date" />
 
         <EditText
@@ -42,52 +47,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="@string/insertarFechaFinal"
+            android:hint="@string/estadoProyecto"
             android:inputType="phone" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="334dp"
-        android:layout_height="111dp"
-        android:layout_marginTop="15dp"
-        android:orientation="horizontal">
-
-        <EditText
-            android:id="@+id/PlantillaPresupuesto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:clickable="true"
-            android:ems="10"
-            android:focusable="false"
-            android:hint="@string/insertarHoraInicial"
-            android:inputType="date" />
-
-        <EditText
-            android:id="@+id/Validez"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="@string/insertarHoraFinal"
-            android:inputType="phone" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="333dp"
-        android:layout_height="72dp"
-        android:orientation="horizontal">
-
-        <EditText
-            android:id="@+id/SeleccionarEmpresa"
-            android:layout_width="323dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="@string/Seleccionar_proyectos"
-            android:inputType="textPersonName" />
 
     </LinearLayout>
 
@@ -98,7 +59,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="25dp"
         android:background="@drawable/estilo_boton_popup"
-        android:text="@string/btnSubirParte"
+        android:text="@string/btnMeterProyecto"
         android:textColor="@color/white" />
 
 </LinearLayout>

@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.google.android.material.snackbar.Snackbar;
@@ -28,6 +29,19 @@ public class Perfil extends AppCompatActivity {
         volver= findViewById(R.id.volver);
         cambiarDatos = findViewById(R.id.editarCaracteristicas);
         cambiarFoto = findViewById(R.id.CambiarFoto);
+        //Poner que sea invisible segun el tipo de usuario que se meta
+       /** if(userId==//usuario de postgre){
+            ImageButton llamar = findViewById(R.id.btnLlamar);
+            textoCambiarImagen.setVisibility(View.INVISIBLE);
+            spinner.setVisibility(View.INVISIBLE);
+            logout.setVisibility(View.INVISIBLE);
+            editar.setVisibility(View.INVISIBLE);
+            quitarMusica.setVisibility(View.INVISIBLE);
+        }else{
+
+        }*/
+
+
         volver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,12 +69,12 @@ public class Perfil extends AppCompatActivity {
     public void ShowPopUp(View v){
         dialogBuilder= new AlertDialog.Builder(this);
         final View contactPopupView = getLayoutInflater().inflate(R.layout.popup_modificar_usuario, null);
-        EditText editarNombre = contactPopupView.findViewById(R.id.NombrePerfil);
-        EditText editarpuesto = contactPopupView.findViewById(R.id.contrasena);
-        EditText editartelefono = contactPopupView.findViewById(R.id.Telefono);
-        EditText editarCorreo = contactPopupView.findViewById(R.id.Correoperfil);
+        EditText editarNombre = contactPopupView.findViewById(R.id.Proyecto);
+        EditText editarpuesto = contactPopupView.findViewById(R.id.Estado);
+        EditText editartelefono = contactPopupView.findViewById(R.id.PlantillaPresupuesto);
+        EditText editarCorreo = contactPopupView.findViewById(R.id.Validez);
 
-        Button btnEnviar = contactPopupView.findViewById(R.id.btnCambiarUsuario);
+        Button btnEnviar = contactPopupView.findViewById(R.id.btnSubirProyecto);
         TextView txtclose = contactPopupView.findViewById(R.id.txtclose);
 
         txtclose.setText("X");

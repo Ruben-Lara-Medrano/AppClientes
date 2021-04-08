@@ -20,69 +20,46 @@
         android:textStyle="bold" />
 
     <LinearLayout
-        android:layout_width="334dp"
-        android:layout_height="111dp"
-        android:layout_marginTop="15dp"
-        android:orientation="horizontal">
-
-        <EditText
-            android:id="@+id/NombrePerfil"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:clickable="true"
-            android:ems="10"
-            android:focusable="false"
-            android:hint="Nombre proyecto"
-            android:inputType="date" />
-
-        <EditText
-            android:id="@+id/contrasena"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="proyecto"
-            android:inputType="phone" />
-
-    </LinearLayout>
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:orientation="horizontal"></LinearLayout>
 
     <LinearLayout
         android:layout_width="334dp"
-        android:layout_height="111dp"
+        android:layout_height="123dp"
         android:layout_marginTop="15dp"
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/Telefono"
+            android:id="@+id/Proyecto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:clickable="true"
             android:ems="10"
             android:focusable="false"
-            android:hint="tipo de proyecto"
+            android:hint="@string/nombreProyecto"
             android:inputType="date" />
 
         <EditText
-            android:id="@+id/Correoperfil"
+            android:id="@+id/Estado"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Tipo de proyecto2 "
+            android:hint="@string/descripcion"
             android:inputType="phone" />
 
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnCambiarUsuario"
+        android:id="@+id/btnSubirProyecto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="25dp"
         android:background="@drawable/estilo_boton_popup"
-        android:text="borrarProyecto"
+        android:text="@string/btnSubirParte"
         android:textColor="@color/white" />
 
 </LinearLayout>

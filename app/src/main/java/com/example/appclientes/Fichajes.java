@@ -8,10 +8,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.ListView;
+
+import java.util.List;
 
 public class Fichajes extends AppCompatActivity {
     private Button btnComprobar,btnMostrar,btnMostrarFichajes;
     private ImageView btnFichar;
+    List<ListView> Fichajes;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,7 +48,8 @@ public class Fichajes extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(), PartesHoras.class);
-                startActivity(i);            }
+                startActivity(i);
+            }
         });
     }
 

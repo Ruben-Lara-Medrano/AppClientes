@@ -20,8 +20,13 @@
         android:textStyle="bold" />
 
     <LinearLayout
-        android:layout_width="334dp"
-        android:layout_height="111dp"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="80dp"
         android:layout_marginTop="15dp"
         android:orientation="horizontal">
 
@@ -33,7 +38,7 @@
             android:clickable="true"
             android:ems="10"
             android:focusable="false"
-            android:hint="@string/insertarFechaInicio"
+            android:hint="@string/empleado"
             android:inputType="date" />
 
         <EditText
@@ -42,53 +47,33 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="@string/insertarFechaFinal"
+            android:hint="@string/horas"
             android:inputType="phone" />
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="334dp"
-        android:layout_height="111dp"
-        android:layout_marginTop="15dp"
+        android:layout_width="340dp"
+        android:layout_height="67dp"
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/PlantillaPresupuesto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:clickable="true"
-            android:ems="10"
-            android:focusable="false"
-            android:hint="@string/insertarHoraInicial"
-            android:inputType="date" />
-
-        <EditText
-            android:id="@+id/Validez"
+            android:id="@+id/SeleccionarProyecto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="@string/insertarHoraFinal"
-            android:inputType="phone" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="333dp"
-        android:layout_height="72dp"
-        android:orientation="horizontal">
-
-        <EditText
-            android:id="@+id/SeleccionarEmpresa"
-            android:layout_width="323dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="@string/Seleccionar_proyectos"
+            android:hint="@string/seleccionarProyecto"
             android:inputType="textPersonName" />
 
+        <EditText
+            android:id="@+id/SelecionarTarea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/seleccionarTarea"
+            android:inputType="textPersonName" />
     </LinearLayout>
 
     <Button
@@ -98,7 +83,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="25dp"
         android:background="@drawable/estilo_boton_popup"
-        android:text="@string/btnSubirParte"
+        android:text="@string/btnborraParteHorasAdmimnistrador"
         android:textColor="@color/white" />
 
 </LinearLayout>

@@ -26,18 +26,18 @@
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/NombrePerfil"
+            android:id="@+id/Proyecto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:clickable="true"
             android:ems="10"
             android:focusable="false"
-            android:hint="Nombre Usuario"
+            android:hint="@string/nombreNuevoUsuarioAdministrador"
             android:inputType="date" />
 
         <EditText
-            android:id="@+id/contrasena"
+            android:id="@+id/Estado"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -54,23 +54,23 @@
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/Telefono"
+            android:id="@+id/PlantillaPresupuesto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:clickable="true"
             android:ems="10"
             android:focusable="false"
-            android:hint="Correo Usuario"
+            android:hint="@string/correoNuevoUsuarioAdministrador"
             android:inputType="date" />
 
         <EditText
-            android:id="@+id/Correoperfil"
+            android:id="@+id/Validez"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Puesto"
+            android:hint="@string/puestoNuevousuarioAdministrador"
             android:inputType="phone" />
 
     </LinearLayout>
@@ -86,19 +86,19 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Seleccionar empresa"
+            android:hint="@string/seleccionarEmpresaNuevoUsuario"
             android:inputType="textPersonName" />
 
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnCambiarUsuario"
+        android:id="@+id/btnSubirProyecto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="25dp"
         android:background="@drawable/estilo_boton_popup"
-        android:text="Crear usuario"
+        android:hint="@string/btnCrearUsuarioAdministrador"
         android:textColor="@color/white" />
 
 </LinearLayout>

@@ -18,16 +18,14 @@
         tools:layout_editor_absoluteY="15dp" />
 
     <TextView
-        android:id="@+id/DescripcionUsuario"
+        android:id="@+id/FechaParteHora"
         android:layout_width="342dp"
         android:layout_height="24dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/NombreUsuario"
-        app:layout_constraintTop_toBottomOf="@+id/NombreUsuario" />
+        tools:layout_editor_absoluteY="50dp" />
 
     <View
         android:layout_width="442dp"
@@ -37,6 +35,7 @@
         android:layout_marginRight="16dp"
         android:background="@android:color/darker_gray"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/DescripcionUsuario"
-        app:layout_constraintTop_toBottomOf="@+id/DescripcionUsuario" />
+        app:layout_constraintStart_toStartOf="@+id/FechaParteHora"
+        app:layout_constraintTop_toBottomOf="@+id/FechaParteHora" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

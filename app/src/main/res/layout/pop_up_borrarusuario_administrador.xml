@@ -32,7 +32,7 @@
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/NombrePerfil"
+            android:id="@+id/Proyecto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -54,7 +54,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnCambiarUsuario"
+        android:id="@+id/btnSubirProyecto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"

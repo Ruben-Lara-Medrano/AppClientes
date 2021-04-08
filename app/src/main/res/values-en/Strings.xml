@@ -43,10 +43,15 @@
     <!--Proyectos-->
 
     <!--Fichajes-->
+    <string name="MostarFichajes">Show the latest timesheet</string>
+    <string name="pulsameParaFichar">Push me for check ur entrance</string>
 
     <!--Compras-->
 
     <!--Ventas-->
+
+    <!--Tarea -->
+    <string name="buscadorTareas">Search task...</string>
     <!--Showpopup-->
     <string name="insertarFechaInicio">Start Date</string>
     <string name="insertarFechaFinal">End Date</string>
@@ -73,4 +78,20 @@
     <string name="btnBorrarPoyectoAdmimnistrador">Delete project</string>
     <string name="btnMostarPoyectoAdmimnistrador">Mostar proyecto</string>
     <string name="btnborrarUsuarioAdministrador">Delete user</string>
+    <string name="empleado">Insert employee</string>
+    <string name="horas">Insert hour</string>
+    <string name="seleccionarProyecto">Choose project</string>
+    <string name="seleccionarTarea">Choose task</string>
+    <string name="diaInicio">Choose an start date</string>
+    <string name="diaFinal">Choose an end date</string>
+    <string name="descripcion">Write a short description...</string>
+    <string name="nombreProyecto">Put a name for the project</string>
+    <string name="estadoProyecto">Estate of the project</string>
+    <string name="btnMeterProyecto">Put projecto</string>
+    <string name="nombreNuevoUsuarioAdministrador">User name</string>
+    <string name="correoNuevoUsuarioAdministrador">User email</string>
+    <string name="puestoNuevousuarioAdministrador">User job</string>
+    <string name="seleccionarEmpresaNuevoUsuario">Select employee bussines</string>
+    <string name="btnCrearUsuarioAdministrador">Create a new user</string>
+
 </resources>

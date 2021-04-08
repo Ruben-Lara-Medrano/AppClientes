@@ -7,16 +7,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.TextView;
 
+import com.android.volley.toolbox.JsonArrayRequest;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
+
+import java.util.List;
 
 public class PartesHoras extends AppCompatActivity {
     private FloatingActionButton buscar, insertar;
     private EditText fechainico;
     AlertDialog.Builder dialogBuilder;
     AlertDialog dialog;
+    List<ListView> PartesHoras;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +29,7 @@ public class PartesHoras extends AppCompatActivity {
         setContentView(R.layout.activity_partes_horas);
         insertar = findViewById(R.id.InsertarParteHora);
 
-
+    //    obtenerPublicaciones(ConexionCAD.mostarPartesHoras());
 
         insertar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,17 +38,19 @@ public class PartesHoras extends AppCompatActivity {
             }
         });
     }
-
+    public void obtenerPublicaciones(String url){
+        //JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(url,)
+    }
     public void ShowPopup(View v) {
         dialogBuilder= new AlertDialog.Builder(this);
         final View contactPopupView = getLayoutInflater().inflate(R.layout.popup, null);
-        EditText editarNombre = contactPopupView.findViewById(R.id.NombrePerfil);
-        EditText editartelefono = contactPopupView.findViewById(R.id.contrasena);
+        EditText editarNombre = contactPopupView.findViewById(R.id.Proyecto);
+        EditText editartelefono = contactPopupView.findViewById(R.id.Estado);
         EditText editarpuesto = contactPopupView.findViewById(R.id.SeleccionarEmpresa);
-        EditText HoraInicio = contactPopupView.findViewById(R.id.Telefono);
-        EditText horaFinal = contactPopupView.findViewById(R.id.Correoperfil);
+        EditText HoraInicio = contactPopupView.findViewById(R.id.PlantillaPresupuesto);
+        EditText horaFinal = contactPopupView.findViewById(R.id.Validez);
 
-        Button btnEnviar = contactPopupView.findViewById(R.id.btnCambiarUsuario);
+        Button btnEnviar = contactPopupView.findViewById(R.id.btnSubirProyecto);
         TextView txtclose = contactPopupView.findViewById(R.id.txtclose);
 
         txtclose.setText("X");
@@ -64,7 +71,6 @@ public class PartesHoras extends AppCompatActivity {
                 }
             }
         });
-
         txtclose.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

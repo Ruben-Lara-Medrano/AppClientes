@@ -3,6 +3,7 @@ package com.example.appclientes;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -22,6 +23,8 @@ public class MainMenu extends AppCompatActivity {
         Perfil = findViewById(R.id.Perfil);
         Salir = findViewById(R.id.btnSalir);
 
+        /**btnmyButton.setEnabled(true);
+        btnmyButton.setTextColor(Color.parseColor("#ffffff"));*/
         Proyectos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -57,5 +60,13 @@ public class MainMenu extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        Ventas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), Ventas.class);
+                startActivity(i);
+            }
+        });
     }
+
 }
