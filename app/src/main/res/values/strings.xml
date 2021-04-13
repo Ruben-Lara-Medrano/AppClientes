@@ -56,7 +56,8 @@
     <string name="insertarHoraFinal">Hora final</string>
     <string name="Seleccionar_proyectos">Seleccionar proyectos</string>
     <string name="btnSubirParte">Subir parte</string>
-
+    <!--Buscador usuarios -->
+    <string name="buscaraUsuarios">Buscar usuarios...</string>
     <!--Administrador -->
     <string name="insertarUsuarioAdministrador">Insertar usuario:</string>
     <string name="borrarUsuarioAdministrador">Borrar usuario:</string>
@@ -91,5 +92,6 @@
     <string name="puestoNuevousuarioAdministrador">Puesto del usuario</string>
     <string name="seleccionarEmpresaNuevoUsuario">Seleccionar empresa del usuario</string>
     <string name="btnCrearUsuarioAdministrador">Crear usuario administrador</string>
+
 
 </resources>

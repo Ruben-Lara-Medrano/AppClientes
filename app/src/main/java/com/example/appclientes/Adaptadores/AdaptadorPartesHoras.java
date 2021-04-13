@@ -7,28 +7,35 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Filter;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
+import com.example.appclientes.Conexion.ConexionCAD;
+import com.example.appclientes.Perfil;
 import com.example.appclientes.Pojos.PartesHoras;
 import com.example.appclientes.R;
 
 import java.util.ArrayList;
 import java.util.List;
-//todo hacer el adaptador para buscar los partes de horas.
+
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class AdaptadorPartesHoras extends RecyclerView.Adapter<AdaptadorPartesHoras.RecyclerviewHolder> {
 
     Context context;
-    List<PartesHoras> informacionUsuarioList;
-    List<PartesHoras> filteredInformacionUsuarioList;
-
-    public AdaptadorPartesHoras(Context context, List<PartesHoras> informacionUsuarioList) {
+    List<PartesHoras> PartesHoras;
+    List<PartesHoras> listaDeFilttrosPartesHoras;
+    RequestQueue requestQueue;
+    ConexionCAD direciones = new ConexionCAD();
+    public AdaptadorPartesHoras(Context context, List<PartesHoras> usuarioList) {
         this.context = context;
-        this.informacionUsuarioList = informacionUsuarioList;
-        this.filteredInformacionUsuarioList = informacionUsuarioList;
+        this.PartesHoras = PartesHoras;
+        this.listaDeFilttrosPartesHoras = listaDeFilttrosPartesHoras;
+        requestQueue= Volley.newRequestQueue(context.getApplicationContext());
+
     }
 
     @NonNull
@@ -42,26 +49,25 @@ public class AdaptadorPartesHoras extends RecyclerView.Adapter<AdaptadorPartesHo
     @Override
     public void onBindViewHolder(@NonNull RecyclerviewHolder holder, final int position) {
 
-        /**holder.userName.setText(filteredInformacionUsuarioList.get(position).getUserName());
-        holder.userDesc.setText(filteredInformacionUsuarioList.get(position).getDescp());
-        holder.userImage.setImageResource(filteredInformacionUsuarioList.get(position).getImageUrl());*/
-
-        /*ItemAnimation.animateFadeIn(holder.itemView, position);*/
+        holder.fechaInicio.setText((CharSequence) listaDeFilttrosPartesHoras.get(position).getFechaInicio());
+        holder.fechaFinal.setText((CharSequence) listaDeFilttrosPartesHoras.get(position).getFechaFinal());
+        holder.horaInicio.setText((CharSequence) listaDeFilttrosPartesHoras.get(position).getHoraInicio());
+        holder.horaFinal.setText((CharSequence)listaDeFilttrosPartesHoras.get((position)).getHoraFinal());
+        //ItemAnimation.animateFadeIn(holder.itemView, position);
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 //metodo para el onclick en cada card del buscador
-                Intent intent = new Intent(context, PartesHoras.class);
-                intent.putExtra("Fecha inicial", filteredInformacionUsuarioList.get(position).getFechaInicio());
-                intent.putExtra("fecha final", filteredInformacionUsuarioList.get(position).getFechaFinal());
-                intent.putExtra("Hora Inicial", filteredInformacionUsuarioList.get(position).getHoraInicio());
-                intent.putExtra("Hora inicial", filteredInformacionUsuarioList.get(position).getHoraFinal());
+                Intent intent = new Intent(context, Perfil.class);
+                intent.putExtra("Hora inicial", listaDeFilttrosPartesHoras.get(position).getHoraInicio());
+
+                //intent.putExtra("userDesc", filteredUsuarioList.get(position).getDescp());
                 context.startActivity(intent);
             }
         });
 
-        /**holder.userImage.setOnClickListener(new View.OnClickListener() {
+        /*holder.userImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(context, "User Name Clicked", Toast.LENGTH_SHORT).show();
@@ -69,29 +75,47 @@ public class AdaptadorPartesHoras extends RecyclerView.Adapter<AdaptadorPartesHo
             }
         });*/
 
+
     }
+
 
     @Override
     public int getItemCount() {
-        return filteredInformacionUsuarioList.size();
+        return listaDeFilttrosPartesHoras.size();
     }
 
-    public static final class RecyclerviewHolder extends RecyclerView.ViewHolder {
+    public  class RecyclerviewHolder extends RecyclerView.ViewHolder {
 
 
-        TextView userName, fechaFinal,horas;
+        CircleImageView userImage;
+        TextView fechaInicio, fechaFinal, proyecto, horaInicio, horaFinal ;
 
         public RecyclerviewHolder(@NonNull View itemView) {
             super(itemView);
 
-            /**userName = itemView.findViewById(R.id.NombreEmpleado);
-            fechaFinal = itemView.findViewById(R.id.tabDeDate);
-            horas = itemView.findViewById(R.id.tabDeTiempo);
-*/
+            fechaInicio = itemView.findViewById(R.id.Horas);
+            fechaFinal = itemView.findViewById(R.id.btnPartesHoras);
+
 
         }
+       /* void bindata (final Usuario sacarUsuario){
+        cargarImagen(userImage, direciones.actualizarFoto()+sacarUsuario.getImagen());
+        }*/
     }
-
+    /* private void cargarImagen(CircleImageView imagenPerfil, String url){
+         ImageRequest imageRequest = new ImageRequest(url, new Response.Listener<Bitmap>() {
+             @Override
+             public void onResponse(Bitmap response) {
+                 imagenPerfil.setImageBitmap(response);
+             }
+         }, 0, 0, ImageView.ScaleType.CENTER, null, new Response.ErrorListener() {
+             @Override
+             public void onErrorResponse(VolleyError error) {
+                 //Poner una imagen por defecto
+             }
+         });
+         requestQueue.add(imageRequest);
+     }*/
     public Filter getFilter(){
 
         return new Filter() {
@@ -100,30 +124,30 @@ public class AdaptadorPartesHoras extends RecyclerView.Adapter<AdaptadorPartesHo
 
                 String Key = charSequence.toString();
                 if(Key.isEmpty()){
-                    filteredInformacionUsuarioList = informacionUsuarioList;
+                    listaDeFilttrosPartesHoras = PartesHoras;
                 }
                 else{
 
                     List<PartesHoras> lstFiltered = new ArrayList<>();
-                    for(PartesHoras row: informacionUsuarioList){
-                      /**  if(row.getFechaInicio().toLowerCase().contains(Key.toLowerCase())){
+                    for(PartesHoras row: listaDeFilttrosPartesHoras){
+                        if(row.getHoraInicio().toString().contains(Key.toLowerCase())){
                             lstFiltered.add(row);
 
-                        }*/
+                        }
                     }
 
-                    filteredInformacionUsuarioList = lstFiltered;
+                    listaDeFilttrosPartesHoras = lstFiltered;
                 }
 
                 FilterResults filterResults = new FilterResults();
-                filterResults.values = filteredInformacionUsuarioList;
+                filterResults.values = listaDeFilttrosPartesHoras;
                 return filterResults;
             }
 
             @Override
             protected void publishResults(CharSequence charSequence, FilterResults filterResults) {
 
-                filteredInformacionUsuarioList = (List<PartesHoras>)filterResults.values;
+                listaDeFilttrosPartesHoras = (List<PartesHoras>)filterResults.values;
                 notifyDataSetChanged();
 
             }

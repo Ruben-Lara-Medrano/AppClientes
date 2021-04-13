@@ -59,6 +59,8 @@
     <string name="insertarHoraFinal">End hour</string>
     <string name="Seleccionar_proyectos">Proyect Select</string>
     <string name="btnSubirParte">Upload timesheet</string>
+    <!--Buscador usuarios -->
+    <string name="buscaraUsuarios">Buscar usuarios...</string>
 
     <!--Administrador -->
     <string name="insertarUsuarioAdministrador">Insert new user</string>

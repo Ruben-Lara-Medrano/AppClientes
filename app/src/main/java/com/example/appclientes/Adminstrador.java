@@ -13,7 +13,7 @@ import android.widget.TextView;
 import com.google.android.material.snackbar.Snackbar;
 
 public class Adminstrador extends AppCompatActivity {
-    private Button btnCrearUsuario, btnEliminarUsuario, btnModificarUsuario,btnInsertarPartesHoras,btnBorrarPartesHoras, btnBorrarProyectos, btnMostraproyectos, btnInsertarProyectos;
+    private Button btnCrearUsuario, btnEliminarUsuario, btnModificarUsuario,btnInsertarPartesHoras,btnBorrarPartesHoras, btnBorrarProyectos, btnMostraproyectos, btnInsertarProyectos,BtnModificarUsuario,btnModificarEmpresa;
     AlertDialog.Builder dialogBuilder;
     AlertDialog dialog;
     @Override
@@ -28,6 +28,8 @@ public class Adminstrador extends AppCompatActivity {
         btnBorrarProyectos = findViewById(R.id.btnBorrarProyectos);
         btnMostraproyectos = findViewById(R.id.btnMostarProyectos);
         btnInsertarProyectos = findViewById(R.id.btnInsertarProyectos);
+        btnModificarUsuario = findViewById(R.id.modificarUsuario);
+        btnModificarEmpresa= findViewById(R.id.btnModificarEmpresa);
         btnCrearUsuario.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -68,6 +70,18 @@ public class Adminstrador extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 ShowPopUpInsertarProyectos(v);
+            }
+        });
+        btnModificarUsuario.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ShowPoupModificarUsuario(v);
+            }
+        });
+        btnModificarEmpresa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ShowPopupModificarEmpresa(v);
             }
         });
     }
@@ -276,6 +290,8 @@ public class Adminstrador extends AppCompatActivity {
                 public void onClick(View v) {
                     if(Proyecto.getText().toString().equals("")||Estado.getText().toString().equals("")){
                         Snackbar snackbar = Snackbar.make(v, "Todos los parametros deben estar completos.", Snackbar.LENGTH_LONG);
+                        snackbar.setDuration(2000);
+                        snackbar.show();
                     }
                     else{
                         dialog.cancel();
@@ -289,4 +305,70 @@ public class Adminstrador extends AppCompatActivity {
                 }
             });
         }
+        public void ShowPoupModificarUsuario(View v){
+        //todo Revisar el popup y que esta relacionado de forma correcta
+            dialogBuilder= new AlertDialog.Builder(this);
+            final View contactPopupView = getLayoutInflater().inflate(R.layout.pop_up_insertarusuario_administrador, null);
+            EditText EliminarUsuarioNombre = contactPopupView.findViewById(R.id.Proyecto);
+            EditText EliminarContrasenaUsuairo = contactPopupView.findViewById(R.id.Estado);
+            Button btnEnviar = contactPopupView.findViewById(R.id.btnSubirProyecto);
+            TextView txtclose = contactPopupView.findViewById(R.id.txtclose);
+
+            txtclose.setText("X");
+            dialogBuilder.setView(contactPopupView);
+            dialog= dialogBuilder.create();
+            dialog.show();
+            btnEnviar.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if(EliminarUsuarioNombre.getText().toString().equals("")||EliminarContrasenaUsuairo.getText().toString().equals("")){
+                        Snackbar snackbar = Snackbar.make(v, "Todos los apartados deben estar completos.", Snackbar.LENGTH_LONG);
+                        snackbar.setDuration(2000);
+                        snackbar.show();
+                    }
+                    else{
+                        dialog.cancel();
+                    }
+                }
+            });
+            txtclose.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    dialog.cancel();
+                }
+            });
+        }
+    public void ShowPopupModificarEmpresa(View v){
+        //todo Revisar el popup y que sus respectivos id y textVies estan bien relacionados.
+        dialogBuilder= new AlertDialog.Builder(this);
+        final View contactPopupView = getLayoutInflater().inflate(R.layout.pop_up_insertarusuario_administrador, null);
+        EditText EliminarUsuarioNombre = contactPopupView.findViewById(R.id.Proyecto);
+        EditText EliminarContrasenaUsuairo = contactPopupView.findViewById(R.id.Estado);
+        Button btnEnviar = contactPopupView.findViewById(R.id.btnSubirProyecto);
+        TextView txtclose = contactPopupView.findViewById(R.id.txtclose);
+
+        txtclose.setText("X");
+        dialogBuilder.setView(contactPopupView);
+        dialog= dialogBuilder.create();
+        dialog.show();
+        btnEnviar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(EliminarUsuarioNombre.getText().toString().equals("")||EliminarContrasenaUsuairo.getText().toString().equals("")){
+                    Snackbar snackbar = Snackbar.make(v, "Todos los apartados deben estar completos.", Snackbar.LENGTH_LONG);
+                    snackbar.setDuration(2000);
+                    snackbar.show();
+                }
+                else{
+                    dialog.cancel();
+                }
+            }
+        });
+        txtclose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.cancel();
+            }
+        });
+    }
 }

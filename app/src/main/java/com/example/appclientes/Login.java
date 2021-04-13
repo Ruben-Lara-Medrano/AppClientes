@@ -38,7 +38,7 @@ public class Login extends AppCompatActivity {
     }
 
 /* Metodo para iniciar sesion.*/
-    //todo Hacer el php para la conexion y el JDBC a postgre.
+    //todo El JDBC a postgre y su conexion.
     public void iniciarSesion(View view) {
         if (correo.getText().toString().equals("") || pass.getText().toString().equals("")) {
             Snackbar snackbar = Snackbar.make(view, R.string.dastosVaciosLogin, Snackbar.LENGTH_LONG);
